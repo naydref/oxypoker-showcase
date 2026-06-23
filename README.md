@@ -25,7 +25,7 @@ architecture, development process and working product.
 flowchart LR
     UI[React Interface] --> API[Flask REST API]
     API --> GAME[Poker Runtime]
-    GAME --> ENGINE[Deterministic Hold'em Engine]
+    GAME --> ENGINE[Deterministic Holdem Engine]
     GAME --> PROFILES[Persistent Player Profiles]
     GAME --> SOCIAL[Social Memory]
     GAME --> LEAGUES[Leagues and Standings]
@@ -33,15 +33,19 @@ flowchart LR
     PROFILES --> STORAGE[(Persistent Storage)]
     SOCIAL --> STORAGE
     LEAGUES --> STORAGE
-Engineering priorities
-chip conservation and correct pot settlement
-legal betting actions and all-in edge cases
-deterministic engine behaviour
-stable API contracts
-separation of transient hands from persistent world state
-operator visibility through telemetry and diagnostics
-incremental development through documented checkpoints
-Development approach
+```
+
+## Engineering priorities
+
+- chip conservation and correct pot settlement
+- legal betting actions and all-in edge cases
+- deterministic engine behaviour
+- stable API contracts
+- separation of transient hands from persistent world state
+- operator visibility through telemetry and diagnostics
+- incremental development through documented checkpoints
+
+## Development approach
 
 OXY Poker was created through AI-assisted software development.
 
@@ -50,12 +54,12 @@ decisions, agent coordination, acceptance testing, runtime verification and
 approval of stable Git checkpoints. AI coding agents accelerate implementation,
 but every delivered system is reviewed against explicit requirements.
 
-Technology
+## Technology
 
 Python, Flask, React, Vite, REST APIs, persistent storage, automated testing,
 Git and Linux.
 
-Current status
+## Current status
 
 The engine, API, interfaces, persistent profiles, leagues, social memory and
 telemetry are implemented as a working prototype.
@@ -63,7 +67,7 @@ telemetry are implemented as a working prototype.
 The project remains under active development. Some older runtime components are
 still being progressively modularized.
 
-Source availability
+## Source availability
 
 The production source code, runtime data, credentials and infrastructure
 configuration are private. Screenshots, demonstrations and additional
